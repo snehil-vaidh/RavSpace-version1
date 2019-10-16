@@ -1,0 +1,19 @@
+<div class="body-container">
+        <img class="background-1" src={{background_1}} />
+        <img class="background-2" src={{background_2}} />
+        <img class="background-3" src={{background_2}} />
+        <img class="background-4" src={{background_4}} />
+        <img class="process-list" src={{process_list}} />
+        <div class="card-view">
+            <br/>
+            <h2>Congrats, <b style="color: #6C63FF;">{{displayUser.fullName}}!</b> You are all set up</h2>
+            <img class="profile-img" src={{profile_img}} />
+            <!-- <h3>{{displayUser.fullName}}</h3>
+            <div [ngSwitch]="displayUser.Student">
+                <div *ngSwitchCase="college-true"><p>{{displayUser.collegeMajor}} {{displayUser.collegeName}}</p></div>
+                <div *ngSwitchCase="school-true"><p>{{displayUser.schoolStandard}} {{displayUser.schoolName}}</p></div>
+            </div>
+             -->
+            <button class="btn" (click) = "goToPage('path-choose')">NEXT</button>
+        </div>
+</div>

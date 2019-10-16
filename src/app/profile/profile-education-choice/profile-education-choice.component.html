@@ -1,0 +1,32 @@
+<div class="body-container">
+    <img class="background-1" src={{background_1}} />
+    <img class="background-2" src={{background_2}} />
+    <img class="background-3" src={{background_2}} />
+    <img class="background-4" src={{background_5}} />
+    <img class="process-list" src={{process_list}} />
+    <div class="card-view">
+        <h2>Where are you <b style="color: #6C63FF;">currently in the education system?</b></h2>
+        <form #profileEducationChoiceForm = "ngForm" autocomplete="off" (submit) = "profileEducationChoiceSubmit(profileEducationChoiceForm, 'profile-setup')" >
+            <b style="position: absolute; top: 163px; left: 142px; width: 167px; height: 33px; font-family: Roboto Regular ;">School Student</b>
+            <input type="radio" value="school-true" name="Student" style="position:absolute; top: 165px; left: 270px; width: 12px; height: 12px; cursor: pointer;" #schoolStudent = "ngModel" [(ngModel)]="service.userData.schoolStudent" >
+            <input type="text" name="schoolName" placeholder="Your School Name" style="position:absolute; top: 162px; left: 330px; width: 157px; height: 20px;" #schoolName = "ngModel" [(ngModel)]="service.userData.schoolName" >
+            <select name="schoolStandard" style="position:absolute; top: 162px; left: 550px; width: 157px; height: 25px; cursor: pointer;" #schoolStandard = "ngModel" [(ngModel)]="service.userData.schoolStandard">
+                <option selected disabled value="0">Select Your Standard</option>
+                <option value="7">7th Standard</option>
+                <option value="8">8th Standard</option>
+                <option value="9">9th Standard</option>
+                <option value="10">10th Standard</option>
+                <option value="11">11th Standard</option>
+                <option value="12">12th Standard</option>
+                <option value="13">High School Graduate</option>
+            </select>
+            
+            <b style="position: absolute; top: 245px; left: 142px; width: 167px; height: 33px; font-family: Roboto Regular ;">College Student</b>
+            <input type="radio" value="college-true" name="Student" style="position:absolute; top: 245px; left: 270px; width: 12px; height: 12px; cursor:pointer;"  #collegeStudent = "ngModel" [(ngModel)]="service.userData.collegeStudent" >
+            <input type="text" name="collegeName" placeholder="Your College Name" style="position:absolute; top: 245px; left: 330px; width: 157px; height: 20px;" #collegeName = "ngModel" [(ngModel)]="service.userData.collegeName" >
+            <input type="text" name="collegeMajor" placeholder="Degree & Major" style="position:absolute; top: 245px; left: 550px; width: 157px; height: 25px;" #collegeMajor = "ngModel" [(ngModel)]="service.userData.collegeMajor" >
+            <button class="form-btn">NEXT</button>
+            <p><b>NOTE:</b> Choose the last institute attended if not enrolled in one currently</p>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+
+<form autocomplete="off" #loginForm = "ngForm" (submit) = "login(loginForm, 'profile-info')" >
+    <input class="insetreg" name="email" size="15" placeholder="Email" type="text" name="email" #email="ngModel" [(ngModel)]="service.userData.Email" required>&nbsp;
+    <input name="loginPassword" type="password" size="15" placeholder="Password" class="insetreg" #password="ngModel" [(ngModel)]="service.userData.password" required>&nbsp;
+    <button class="loginbtn">Login</button>
+</form>
+  
+<nav class="navbar navbar-inverse">
+    <ul class="nav navbar-nav">
+    <li><a [routerLink]="['register']">SIGN UP</a></li>
+    <li><a [routerLink]="['aboutus']">ABOUT US</a></li>
+    <li><a [routerLink]="['howitwork']">HOW IT WORKS</a></li>
+    <li><a [routerLink]="['blogs']">BLOGS</a></li>
+    <li><a [routerLink]="['career']">CAREER</a></li>
+    <li><a [routerLink]="['contact']">CONTACT US</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>  

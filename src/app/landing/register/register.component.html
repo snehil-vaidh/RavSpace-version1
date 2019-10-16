@@ -1,0 +1,19 @@
+<body>       
+    <img class="logo" src={{logo}} />
+    <div class="container" id="abc1">
+        <form  class="form-inline" autocomplete="off" #registerForm = "ngForm" (submit) = "userRegister(registerForm, 'profile-info')" >
+            <h2><b>Sign Up <span>Now!</span></b></h2>
+            <input class="insetreg" placeholder="Full Name" type="text" name="fullName" id="fullName" required #fullName="ngModel" [(ngModel)]="service.userData.fullName"><br/><br/>
+            <input class="insetreg"  name="Email" type="text" placeholder="Email Address" id="Email" required #eMail="ngModel" [(ngModel)]="service.userData.eMail"><br/><br/>
+            <input class="insetreg"  name="password" type="password" placeholder="Password" id="password"  required #password="ngModel" [(ngModel)]="service.userData.password"><br/><br/>
+
+            <!-- <input type="radio" class="check-box" name="customerType" value="Student" #profession="ngModel" [(ngModel)]="service.userData.profession"  > <span style="position: relative; left: 5px; font-size : 20px;">Student</span> 
+            <input type="radio" class="check-box" style="position:relative; left: 30px;" name="customerType" value="Professional" #profession="ngModel" [(ngModel)]="service.userData.profession" > <span style="position: relative; left: 35px; font-size : 20px;">Professional</span> -->
+           
+            <!-- <button class="btn2">Student</button>&nbsp;&nbsp;
+            <button class="btn1">Professional</button> -->
+            <button type="submit" class="btn3">Sign Up</button>
+        </form>
+        </div>
+  </body>
+   

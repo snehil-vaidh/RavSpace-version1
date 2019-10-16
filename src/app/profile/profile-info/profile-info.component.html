@@ -1,0 +1,22 @@
+<div class="body-container">
+        <img class="background-1" src={{background_1}} />
+        <img class="background-2" src={{background_2}} />
+        <img class="background-3" src={{background_2}} />
+        <img class="background-4" src={{background_4}} />
+        <img class="process-list" src={{process_list}} />
+        <div class="card-view">
+            <h2>Tell us <a style="color: #6C63FF;">about you?</a></h2>
+            <form #profileInfoForm = "ngForm" autocomplete="off" (submit) = "profileInfoSubmit(profileInfoForm, 'profile-education-choice')">
+                <input type="text" name="username" placeholder="NickName/Username" style="position: absolute; top: 119px; left: 66px; width: 284px; height:25px; flex-direction: column; border: 0px; border-bottom: 0.2px solid #313131;" #username = "ngModel" [(ngModel)] = "service.userData.username" required />
+                <textarea name="userBio" placeholder="Write a short bio. Something interesting! What you are passionate about? " style="position:absolute; top: 187px; left: 66px; width: 284px; height: 119px;" #userBio = "ngModel" [(ngModel)] = "service.userData.userBio" ></textarea>    
+                <h3>Add Profile Picture</h3> 
+                <input class="file-btn" disabled type="file" accept="image/*" (change)="onFileSelected($event)" />
+                <p style="top: 250px; left: 565px;">Drop Image File</p>
+                <p>Maximum 5mb file size</p>              
+                <button class="btn">NEXT ></button>
+            </form>
+        </div>
+</div>
+
+
+

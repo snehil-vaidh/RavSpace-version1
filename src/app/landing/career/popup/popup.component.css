@@ -1,0 +1,23 @@
+h1{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #F94525;
+}
+
+h4{
+    position: relative;
+    text-align: center;
+}
+
+h5{
+    position: relative;
+    text-align: center;
+    top: 5px;
+}
+
+h6{
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+}

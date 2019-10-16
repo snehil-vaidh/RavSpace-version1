@@ -1,0 +1,72 @@
+<img class="logo" src={{logo}} />
+<div class="container" id="cnt">
+        <form autocomplete="off" #contactForm="ngForm" (submit)="contactFormSubmit(contactForm)" >
+                <h2><b>Send us a <span>Message</span></b></h2>
+                <input class="abc" placeholder="First Name" type="text" name="FirstName" #firstName="ngModel" [(ngModel)]="service.contactUsData.firstName" >&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="abc1" placeholder="Last Name" type="text" name="LastName" #lastName="ngModel" [(ngModel)]="service.contactUsData.lastName"><br/><br/>
+                <input class="abc2" placeholder="Email Adress" type="text" name="Email" #Email="ngModel" [(ngModel)]="service.contactUsData.Email"><br/><br/>
+                <input class="abc3" placeholder="Message" type="text" name="Message" #message="ngModel" [(ngModel)]="service.contactUsData.message"><br/><br/>
+                <button class="btn" >SEND IT</button>
+        </form>
+        
+        </div>
+        <div class="container" id="cnt1">
+        <h3>
+            <b>Find Us</b>
+        </h3>
+        <p><b> Miligen Technologies Private Limited </b>
+                #607, Big Banyan Roots
+                No. 18/1B Carmellaram Road, Off, Sarjapur Main Rd, Carmelaram, Doddakannelli,
+                Bengaluru, Karnataka 560035</p>
+                <p>
+                <b> Contact Number : </b> +91-6261671991</p>
+                <p><b> Email : </b>contact@ravspace.com</p>
+        </div>
+
+
+
+<img class="map-img" src={{imagesrc5}}>
+
+<div id="cnt2">
+        <img id="cnt5" src={{imagesrc1}}>
+        </div>
+
+<div id="ctn3">
+<div class="container" id="gallery1">
+        <h5><b>NAVIGATION</b></h5><br>
+        <ul>
+        <li><a [routerLink]="['/register']">Sign Up</a></li>&nbsp;
+       <li><a [routerLink]="['/aboutus']">About Us</a></li><br>
+        <li><a [routerLink]="['/order']">How It Works</a></li><br>
+        <li><a [routerLink]="['/register']">Blogs</a></li><br>
+         <li><a [routerLink]="['/home']">Career</a></li><br>
+         <li><a [routerLink]="['/order']">Contact Us</a></li><br>
+        </ul>
+</div>
+<div class="container" id="gallery2">
+        <h5><b>LEGAL</b></h5><br>
+        <ul>
+        <li>Privacy</li>
+        <br>
+       <li>Policy</li><br>
+        <li>Copyright</li><br>
+        <li>Terns & Conditions</li><br>
+        </ul>
+</div>
+<div class="container" id="gallery3">
+        <h5><b>SOCIAL MEDIA</b></h5><br>
+        <ul>
+        <li>Twitter</li>
+        <br>
+       <li>Instagram</li><br>
+        <li>Facebook</li><br>
+        </ul>
+</div>
+<div class="container" id="gallery4">
+        <h5 id="stay"><b>STAY CONNECTED
+            </b></h5><br>
+            <p id="stay1">Subscribe for our newsletter.When you do it
+              it you get akk news before everyone.You will be announced about site updates,new carrers etc.
+            </p>
+</div>
+</div>

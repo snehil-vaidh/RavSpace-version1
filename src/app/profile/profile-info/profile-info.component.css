@@ -1,0 +1,165 @@
+.body-container{
+    left: 0px;
+    width: 1366px;
+    height: 750px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    overflow-x: hidden;
+}
+
+.background-1{
+    position: absolute;
+    top: -40.3525390625px;
+    left: -163.110595703125px;
+    width: 326px;
+    height: 795px;
+    /* background: transparent linear-gradient(186deg, #DE2175 0%, #F0654C 100%) 0% 0% no-repeat; */
+    opacity: 1;
+}
+
+
+.background-2{
+    position: absolute;
+    top: 178px;
+    left: 248px;
+    width: 72px;
+    height: 72px;
+    /* background: transparent linear-gradient(332deg, #DE2175 0%, #F0654C 100%) 0% 0% no-repeat padding-box; */
+    opacity: 1;
+}
+
+.background-3{
+    position: absolute;
+    top: -18px;
+    left: 1272px;
+    width: 72px;
+    height: 72px;
+    /* background: transparent linear-gradient(332deg, #DE2175 0%, #F0654C 100%) 0% 0% no-repeat padding-box; */
+    opacity: 1;
+}
+
+.background-4{
+    position: absolute;
+    top: 37px;
+    left: 1035px;
+    width: 500px;
+    height: 715px;
+    opacity: 1;
+}
+
+.process-list{
+    position: absolute;
+    top: 624px;
+    left: 316px;
+    width: 737px;
+    height: 35px;
+    opacity: 1;
+}
+
+.card-view{
+    position: absolute;
+    top: 137px;
+    left: 267px;
+    width: 833px;
+    height: 435px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 99px #FF141442;
+    border: 1px solid #FF000047;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.card-view h2{
+    position: absolute;
+    top: 34px;
+    left: 65px;
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: "Roboto", "Bold";
+    font-size: 30px;
+}
+
+.card-view h3{
+    position: absolute;
+    top: 87px;
+    left: 509px;
+    width: 275px;
+    height: 40px;
+    text-align: left;
+    letter-spacing: 0;
+    color: #393838;
+    opacity: 1;
+    font-family: "Roboto", "Bold";
+    font-size: 25px;
+}
+
+.upload-img{
+    position: absolute;
+    top: 164px;
+    left: 573px;
+    width: 92px;
+    height: 83px;
+    background: transparent 0% 0% no-repeat padding-box;
+    border: 1px solid #00000000;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card-view p{
+    position: absolute;
+    top: 277px;
+    left: 545px;
+    width: 175px;
+    height: 19px;
+    text-align: left;
+    letter-spacing: 0;
+    color: #3F3D56;
+    opacity: 0.83;
+}
+
+.btn{
+    position: absolute;
+    top: 356px;
+    left: 622px;
+    width: 146px;
+    height: 44px;
+    background: #F94525 0% 0% no-repeat padding-box;
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.dropzone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 490px;
+    width: 250px;
+    font-weight: 200;
+    height: 170px;
+    border: 2px dashed black;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hovering{
+    border: 2px solid red;
+    color: #dadada !important;
+}
+
+.file-btn{
+    position: absolute;
+    top: 200px;
+    left: 520px;
+    /* width: 100px;
+    height: 30px; */
+    /* background: #F94525 0% 0% no-repeat padding-box; */
+    /* opacity: 1; */
+    cursor: pointer;
+    /* border-radius: 15px; */
+}

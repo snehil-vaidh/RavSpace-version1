@@ -1,0 +1,171 @@
+.logo{
+  position: relative;
+  top: -200px;
+  left: -767px;
+  width: 258px;
+  height: 63px;
+  background: transparent  0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+#cnt{
+  width:40%;
+  float: left;
+  margin-left: 200px;
+  margin-top: 90px;
+}
+#cnt1{
+  width:40%;
+  float: left;
+  margin-top: 90px;
+}
+
+.map-img{
+  margin-left: 320px;
+  width: 60%;
+  height: 500px;
+  border: solid 2px  #F0654C;
+  border-radius: 10px;
+}
+
+
+h2{
+  
+width: 396px;
+height: 60px;
+text-align: center;
+letter-spacing: 0;
+opacity: 1;
+font-size: 45px;
+text-align: center;
+}
+span{
+  color: #F0654C;
+}
+.abc{
+
+width: 201px;
+height: 48px;
+background: #F2EFEF 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 9px #00000029;
+border: 0.5px solid #393838;
+border-radius: 24px;
+opacity: 1;
+padding: 10px;
+}
+.abc1{
+
+width: 201px;
+height: 48px;
+background: #F2EFEF 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 9px #00000029;
+border: 0.5px solid #393838;
+border-radius: 24px;
+opacity: 1;
+padding: 10px;
+}
+.abc2{
+
+width: 429px;
+height: 48px;
+background: #F2EFEF 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 9px #00000029;
+border: 0.5px solid #393838;
+border-radius: 24px;
+opacity: 1;
+padding: 10px;
+}
+.abc3{
+
+width: 429px;
+height: 144px;
+background: #F2EFEF 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 9px #00000029;
+border: 0.5px solid #393838;
+border-radius: 24px;
+opacity: 1;
+padding: 10px;
+}
+.btn{
+
+width: 146px;
+height: 44px;
+background: #F94525 0% 0% no-repeat padding-box;
+opacity: 1;
+border-radius: 24px;
+}
+
+h3{
+  margin-top: 80px;
+text-align: center;
+letter-spacing: 0;
+color: #393838;
+opacity: 1;
+font-size: 45px;
+text-align: center;
+}
+h5{
+
+text-align: center;
+letter-spacing: 0;
+color: #9D9999;;
+
+font-size: 24px;
+margin-top: 30px;
+}
+
+p{
+  text-align: center;
+font: Regular 20px/27px Segoe UI;
+letter-spacing: 0;
+opacity: 1;
+font-size: 20px;
+}
+
+
+
+
+img{
+  margin-top: 50px;
+  width: 100%;
+height: 300px;
+}
+#ctn3{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #393838 ;
+  text-align: center;
+  margin-top: -40px;
+ }
+ #gallery1{
+  float:left;
+  width: 22%;
+
+}
+#gallery2{
+  float:left;
+  width: 22%;
+}   
+#gallery3{
+  float:left;
+  width: 22%;
+}
+li,a{
+  color: white;
+  list-style-type: none;
+  font-size: 23px;
+}
+#stay1{
+  color: white
+}
+
+
+
+#cnt5{
+  margin-top: 50px;
+  width: 100%;
+height: 200px;
+}
+
+
