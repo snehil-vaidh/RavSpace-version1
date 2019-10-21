@@ -2,7 +2,12 @@
         <div class="header-container">
             <nav class="header-nav">
                 <img class="header-logo" src={{headerlogo}} />
-                <img class="header-profile-img" src={{headerprofile}} (click)="goToPage('user-profile')" /> <a class ="a-profile" (click)="goToPage('user-profile')">PROFILE</a>          
+                <div class="dropdown">
+                    <img class="header-profile-img" src={{headerprofile}} (click)="goToPage('user-profile')" /> <b class ="a-profile" (click)="goToPage('user-profile')">{{displayUser.fullName}}</b>
+                    <div class="dropdown-content">
+                        <a (click)="logout()" >Logout</a>
+                    </div>
+                </div>          
             </nav>
         </div>
 
@@ -33,18 +38,21 @@
         <img class="card-2-background" src={{card_2_background}} />
         <div class="card-view-2">
             <h2>Importance of Career Counselling</h2>
-            <div class="card2-img-cnt" style="left:150px; transform: rotate(22deg);">
+            <div class="card2-img-cnt" style="left:150px; ">
                 <img class="card2-img" src={{card2_img1}} />
                 <img class="card2-icon" src={{card2_icon}} />
             </div>
-            <div class="card2-img-cnt" style="left:600px; transform: rotate(-23deg);">
+            <b style="left: 110px;">Analyzed dicisions <span style="color: #6C63FF;">=</span> Success</b>
+            <div class="card2-img-cnt" style="left:600px;">
                 <img class="card2-img" src={{card2_img2}} />
                 <img class="card2-icon" src={{card2_icon}} />
             </div>
-            <div class="card2-img-cnt" style="left:1050px; transform: rotate(22deg);">
+            <b style="left:165px;">Fix your target <span style="color: #6C63FF;">=</span> Easy path mapping</b>
+            <div class="card2-img-cnt" style="left:1050px;">
                 <img class="card2-img" src={{card2_img3}} />
                 <img class="card2-icon" src={{card2_icon}} />
             </div>
+            <b style="left:240px;">Take Help <span style="color: #6C63FF;">=</span> Choose Wisely</b>
         </div>
 
         <div class="card-view-3">
@@ -78,7 +86,7 @@
                 <br/>
                 <li><img class="card4-icon" src={{card4_icon}}>     The time limit for the assessment test is 40 minutes</li>
             </ul>
-            <button class="card4-btn">TAKE TEST</button>
+            <button class="card4-btn" (click)="takeTest()">TAKE TEST</button>
         </div>
 
 </div>

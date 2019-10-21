@@ -1,0 +1,102 @@
+<div class="body-container">
+    <div class="header-container">
+        <nav class="header-nav">
+            <img class="header-logo" src={{headerlogo}} />
+            <div class="dropdown">
+                <img class="header-profile-img" src={{headerprofile}} (click)="goToPage('user-profile')" /> <b class ="a-profile" (click)="goToPage('user-profile')">{{displayUser.fullName}}</b>
+                <div class="dropdown-content">
+                    <a (click)="logout()" >Logout</a>
+                </div>
+            </div>          
+        </nav>
+    </div>
+
+    <div class="feedback-card">
+        <h1>Thank You!</h1>
+        <h4>
+            Your Report is sent to your registered mail id. Please review it.<br/><br/><br/>
+            <span style="color:black;">Please contact any of the numbers below  <br/> if you need a personal counselling session with a professional career counsellor  <br/> to understand the report and make a decision.</span>
+        </h4>
+        <ul>
+            <li><span style="color:rgb(255, 2, 99);">Shreyas Kumbhare :</span> +91-7200316854</li>
+            <li><span style="color:rgb(255, 2, 99);">Snehil Vaidh :</span> +91-6261671991</li>
+        </ul>
+        <hr style="width:600px; top: 20px; position:relative; border-top: 1px dashed rgb(255, 2, 99);">
+        <h2>Please provide us the feedback to help us improve our platform</h2>
+        <div class="feedback-form">
+            <form autocomplete="off" #feedbackForm="ngForm" (submit)="submitFeedback(feedbackForm,'landing/register')">
+                <p><span style="color: rgb(255, 2, 99);">1.</span> Rate the assessment test</p>
+                <label class="rating-cnt"><input type="radio" name="rating" value="1" #rating="ngModel" [(ngModel)]="service.feedbackData.rating"><span class="rating-mark"><img class="rating-img" src={{rating1}} /></span></label>
+                <label class="rating-cnt" style="position:relative; left:150px;"><input type="radio" name="rating" value="2" #rating="ngModel" [(ngModel)]="service.feedbackData.rating"><span class="rating-mark"><img class="rating-img" src={{rating2}} /></span></label>
+                <label class="rating-cnt" style="position:relative; left:250px;"><input type="radio" name="rating" value="3" #rating="ngModel" [(ngModel)]="service.feedbackData.rating"><span class="rating-mark"><img class="rating-img" src={{rating3}} /></span></label>
+                <label class="rating-cnt" style="position:relative; left:350px;"><input type="radio" name="rating" value="4" #rating="ngModel" [(ngModel)]="service.feedbackData.rating"><span class="rating-mark"><img class="rating-img" src={{rating4}} /></span></label>
+                <label class="rating-cnt" style="position:relative; left:450px;"><input type="radio" name="rating" value="5" #rating="ngModel" [(ngModel)]="service.feedbackData.rating"><span class="rating-mark"><img class="rating-img" src={{rating5}} /></span></label>
+                
+                <br/><br/><br/><br/><br/><br/><p><span style="color: rgb(255, 2, 99);">2.</span> Was the assesment test useful?</p> 
+                <label class="container">Yes
+                    <input type="radio" name="usefulTest" value=true #usefulTest="ngModel" [(ngModel)]="service.feedbackData.usefulTest">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">No
+                    <input type="radio" name="usefulTest" value=false #usefulTest="ngModel" [(ngModel)]="service.feedbackData.usefulTest">
+                    <span class="checkmark"></span>
+                </label>
+
+                <br/><br/><br/><br/><p><span style="color: rgb(255, 2, 99);">3.</span> How would you like to comment on the price of the test?</p> 
+                <label class="container">Too High
+                    <input type="radio" name="priceTest" value="Too High" #priceTest="ngModel" [(ngModel)]="service.feedbackData.priceTest">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">High
+                    <input type="radio" name="priceTest" value="High" #priceTest="ngModel" [(ngModel)]="service.feedbackData.priceTest">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Worth It
+                    <input type="radio" name="priceTest" value="Worth It" #priceTest="ngModel" [(ngModel)]="service.feedbackData.priceTest">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Would have paid even more
+                    <input type="radio" name="priceTest" value="Would have paid even more" #priceTest="ngModel" [(ngModel)]="service.feedbackData.priceTest">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <br/><br/><br/><br/><p><span style="color: rgb(255, 2, 99);">4.</span> Would  you suggest your friends to take the test?</p>
+                <label class="container">Yes
+                    <input type="radio" name="suggestTest" value=true #suggestTest="ngModel" [(ngModel)]="service.feedbackData.suggestTest">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">No
+                    <input type="radio" name="suggestTest" value=false #suggestTest="ngModel" [(ngModel)]="service.feedbackData.suggestTest">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <br/><br/><br/><br/><p><span style="color: rgb(255, 2, 99);">5.</span> Will you be willing to pay for the career validation and mentorship feature of the test?<br/><span style="font-size:13px; position:relative; left:20px; top: -8px;">(In this feature we will provide you a working professional from the field of your choice to answer your questions and guide you)</span></p>
+                <label class="container">Yes
+                    <input type="radio" name="phase2Wilingness" value=true #phase2Wilingness="ngModel" [(ngModel)]="service.feedbackData.phase2Wilingness">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">No
+                    <input type="radio" name="phase2Wilingness" value=false #phase2Wilingness="ngModel" [(ngModel)]="service.feedbackData.phase2Wilingness">
+                    <span class="checkmark"></span>
+                </label>
+
+                <br/><br/><br/><br/><p><span style="color: rgb(255, 2, 99);">6.</span> How did you come to know about RavSpace?</p>
+                <select name="source" id="feedback-6" class="feedback-6" #source="ngModel" [(ngModel)]="service.feedbackData.source">
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Friends/Family">Friends/Family</option>
+                    <option value="School Administration">School Administration</option>
+                    <option value="RavSpace Seminar">Ravspace Seminar</option>
+                </select>
+                <br/><br/><br/><br/><br/><p><span style="color: rgb(255, 2, 99);">7.</span> Please provide any aditional comments:</p>
+                <input class="feedback-7" type="text" placeholder="Your Feedback is very important to us" name="comments" #comments="ngModel" [(ngModel)]="service.feedbackData.comments">
+                
+                <button class="feedback-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <hr style="position:relative; top:200px; border: 0px;">
+    
+
+</div>

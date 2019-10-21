@@ -1,0 +1,161 @@
+.pop-body-container{
+    width: 700px;
+    height: 600px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.pop-body-container h1{
+    position: relative;
+    text-align: center;
+    top: 0px;
+    color: #3F3D56;
+    font-family: 'Roboto', Bold;
+    font-size: 40px;
+}
+
+.card-1{
+    position: relative;
+    top: 55px;
+    left: 40px;
+    width: 300px;
+    height: 400px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 99px #FF14141A;
+    border: 1px solid #FF00001A;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.card-1:hover{
+    border: solid 3px #F94525;
+}
+
+.card-1 h2{
+    position: relative;
+    top: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #F94525;
+    opacity: 1;
+    font-family: 'Roboto', Bold;
+    font-size: 35px;
+}
+
+.card-1 h3{
+    position: relative;
+    text-align: center;
+    letter-spacing: 0;
+    color: #F94525;
+    top: 20px;
+    opacity: 1;
+    font-family: 'Roboto', Bold;
+    font-size: 35px;
+}
+
+.card-1 ol{
+    position: relative;
+    text-align: left;
+    width: 250px;
+    top: 30px;
+    left:15px;
+    color: #F94525;
+}
+
+.card-1 ol li{
+    font-size: 22px;
+    font-family: 'Roboto';
+}
+
+.card1-btn{
+    position: relative;
+    top: 50px;
+    left: 87px;
+    width: 120px;
+    height: 40px;
+    padding: 6px 10px;
+    border-radius: 9px;
+    background-color: #F94525;
+    background-size: cover;
+    font-family: Roboto;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.card-2{
+    position: relative;
+    top: -370px;
+    left: 360px;
+    width: 300px;
+    height: 450px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 99px #FF14141A;
+    border: 1px solid #FF00001A;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.card-2:hover{
+    border: solid 3px #6C63FF;
+}
+
+.card-2 h2{
+    position: relative;
+    top: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #6C63FF;
+    opacity: 1;
+    font-family: 'Roboto', Bold;
+    font-size: 40px;
+}
+
+.card-2 h3{
+    position: relative;
+    text-align: center;
+    letter-spacing: 2;
+    top: 20px;
+    color: #6C63FF;
+    opacity: 1;
+    font-family: 'Roboto', Bold;
+    font-size: 35px;
+}
+
+.card-2 ol{
+    position: relative;
+    text-align: left;
+    width: 250px;
+    top: 30px;
+    left:15px;
+    color: #6C63FF;
+}
+
+.card-2 ol li{
+    top: 10px;
+    font-size: 22px;
+    font-family: 'Roboto';
+}
+
+.card2-btn{
+    position: relative;
+    top: 40px;
+    left: 72px;
+    width: 150px;
+    height: 45px;
+    padding: 6px 10px;
+    border-radius: 9px;
+    background-color: #6C63FF;
+    background-size: cover;
+    font-family: Roboto;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+}

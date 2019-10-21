@@ -24,6 +24,7 @@ import { UserService } from './shared/user.service';
 import { LoginfailComponent } from './landing/loginfail/loginfail.component';
 import { DropzoneDirective } from './dropzone.directive';
 import { PopupComponent } from './landing/career/popup/popup.component';
+import { Phase1PricingComponent } from './phase1/phase1-info/phase1-pricing/phase1-pricing.component';
 
 
 
@@ -34,6 +35,7 @@ import { PopupComponent } from './landing/career/popup/popup.component';
     LoginfailComponent,
     DropzoneDirective,
     PopupComponent,
+    Phase1PricingComponent
   ],
   imports: [
     BrowserModule,FormlyBootstrapModule, CommonModule,
@@ -47,6 +49,6 @@ import { PopupComponent } from './landing/career/popup/popup.component';
   ],
   providers: [UserService],
   bootstrap: [AppComponent],
-  entryComponents: [LoginfailComponent, PopupComponent]
+  entryComponents: [LoginfailComponent, PopupComponent, Phase1PricingComponent]
 })
 export class AppModule { }

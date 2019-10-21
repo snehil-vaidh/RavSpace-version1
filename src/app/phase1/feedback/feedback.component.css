@@ -1,0 +1,349 @@
+.body-cotainer{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 1366px;
+    height: 3000px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-color: #F94525
+}
+
+.header-container{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 1481px;
+    height: 123px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 99px #FF14141A;
+    border: 1px solid #FF000026;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+.header-nav{
+    margin-top: 40px;
+    margin-left: 70px;
+    width: 1222px;
+    height: 43px;
+    opacity: 1;
+}
+
+.header-logo{
+    top: 40px;
+    left: 70px;
+    width: 198px;
+    height: 43px;
+    background: transparent  0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.header-profile-img{
+    position: absolute;
+    top: 57px;
+    left: 1119px;
+    width: 35px;
+    height: 35px;
+    background: transparent 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 11px #F9452529;
+    border-radius: 5px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.a-profile{
+    position: absolute;
+    top: 65px;
+    left: 1166px;
+    width: 103px;
+    height: 27px;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 1;
+    color: #F94525;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    top: -90px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    top: 93px;
+    left: 1120px;
+    background-color: #F94525;
+    max-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a{
+    float: none;
+    font-size: 18px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover{
+    font-weight: bold;
+}
+
+
+
+
+/* Body CSS */
+
+.feedback-card{
+    position: relative;
+    align-self: center;
+    width: 70%;
+    height: 2000px;
+    left: 200px;
+    top: 170px;
+    border: solid 2px #F94525;
+    box-shadow: 0px 0px 99px #FF14141A;
+    border-radius: 10px;
+}
+
+.feedback-card h1{
+    position: relative;
+    text-align: center;
+    color: rgb(255, 2, 99);
+    font-size: 30px;
+}
+
+.feedback-card h4{
+    position: relative;
+    text-align: center;
+    color: rgb(255, 2, 99);
+    font-size: 26px;
+}
+
+.feedback-card ul{
+    list-style: none;
+    top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.feedback-card ul li{
+    font-size: 20px;
+}
+
+.feedback-card h2{
+    position: relative;
+    text-align: center;
+    color: rgb(255, 2, 99);
+    top: 60px;
+    font-size: 25px;
+}
+
+.feedback-form{
+    position: relative;
+    left: 107px;
+    top: 100px;
+    width: 80%;
+    height: 1500px;
+    border: dotted 1px #F94525;
+    box-shadow: 0px 0px 99px #FF14141A;
+}
+
+.feedback-form p{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    font-size: 20px;
+}
+
+
+/* Radio Button CSS */
+
+/* Rating FeedBack */
+.rating-cnt{
+    position: relative;
+    top: 60px;
+    left: 50px;
+    cursor: pointer;
+    color: #F94525;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+.rating-cnt input{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.rating-mark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 60px;
+    background-color: #eee;
+    border-radius: 50%;  
+}
+
+.rating-img{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%; 
+}
+
+/* On mouse-over, add a grey background color */
+.rating-cnt:hover input ~ .rating-mark {
+    background-color: #F94525;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .rating-cnt input:checked ~ .rating-mark {
+    background-color: #F94525;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .rating-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .rating-cnt input:checked ~ .rating-mark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .rating-cnt .rating-mark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+  }
+
+
+
+
+/* Yes or No FeedBack */
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    top: 60px;
+    left: 50px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #F94525;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(247, 234, 232);
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: rgb(245, 165, 153);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #F94525;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+
+
+
+
+
+
+.feedback-6{
+    position: relative;
+    top: 60px;
+    left: 40px;
+    width: 300px;
+    height: 30px;
+    border: solid #F94525;
+    background: #F94525;
+}
+
+.feedback-7{
+    position: relative;
+    top: 60px;
+    left: 40px;
+    width: 300px;
+    border: none;
+    border-bottom: solid 1px #F94525;
+    color: #F94525;
+}
+
+.feedback-btn{
+    position: relative;
+    top: 140px;
+    width: 146px;
+    height: 44px;
+    background: #F94525 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+

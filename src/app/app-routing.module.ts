@@ -15,6 +15,7 @@ import { ProfileSetupComponent } from './profile/profile-setup/profile-setup.com
 import { Phase1InfoComponent } from './phase1/phase1-info/phase1-info.component';
 import { PathChooseComponent } from './profile/path-choose/path-choose.component';
 import { ComingSoonComponent } from "./phase2/coming-soon/coming-soon.component";
+import { FeedbackComponent } from "./phase1/feedback/feedback.component";
 
 import { FormsModule } from "@angular/forms";
 
@@ -41,7 +42,8 @@ const routes: Routes = [
   {path:'profile-setup',component:ProfileSetupComponent},
   {path:'path-choose', component: PathChooseComponent},
   {path:'phase1-info', component:Phase1InfoComponent},
-  {path:'coming-soon', component:ComingSoonComponent}
+  {path:'coming-soon', component:ComingSoonComponent},
+  {path:'feedback', component: FeedbackComponent}
 ];
 
 @NgModule({
@@ -58,7 +60,8 @@ const routes: Routes = [
     ProfileSetupComponent,
     PathChooseComponent,
     Phase1InfoComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    FeedbackComponent
   ],
   imports: [RouterModule.forRoot(routes), FormsModule, CommonModule],
   exports: [RouterModule]
@@ -78,7 +81,8 @@ export const routingComponents = [
   ProfileSetupComponent,
   PathChooseComponent,
   Phase1InfoComponent,
-  ComingSoonComponent
+  ComingSoonComponent,
+  FeedbackComponent
 ]
 
 

@@ -22,6 +22,8 @@ export class AboutusComponent implements AfterViewInit  {
 
   founder1 = require("./shreyas.jpg");
   founder2 = require("./snehil.png");
+  intern1 = require("./valio.jpg");
+  intern2 = require("./aditi.jpg");
   imagesrc1=require('./shapes1.png')
   logo = require("./logo.png");
   background = require("./background-1.png");

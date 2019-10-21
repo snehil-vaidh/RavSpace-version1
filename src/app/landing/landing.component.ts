@@ -50,22 +50,10 @@ export class LandingComponent implements OnInit {
   resetForm(form?: NgForm){
     if(form != null)
       form.resetForm();
-    this.service.userData = {
-      id : "",
-      fullName : "",
-      Email : "",
-      password: "",
-      profession : "",
-      username: "",
-      userBio: "",
-      profileImageURL : "",
-      schoolStudent : "",
-      collegeStudent : "",
-      schoolName : "",
-      collegeName : "",
-      schoolStandard : 0,
-      collegeMajor : ""
-    }
+    this.service.loginData = {
+      loginEmail : "",
+      loginPassword : ""
+      }
   }
 
   loginFailed(){
@@ -78,12 +66,18 @@ export class LandingComponent implements OnInit {
 
   login(form:NgForm, pageName: string){
     let data = form.value;
+    let flag = false;
     this.userList.map(item =>{
       if(item.Email == data.Email && item.password == data.loginPassword)
+        flag = true;
+        console.log(flag)
         this.router.navigate([`${pageName}`]);
-      else
-        this.loginFailed();
     })
+    console.log(flag)
+    if(flag == false)
+      this.loginFailed();
+
+    this.resetForm();
   }
 
 }

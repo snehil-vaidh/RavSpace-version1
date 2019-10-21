@@ -1,7 +1,7 @@
 
 <form autocomplete="off" #loginForm = "ngForm" (submit) = "login(loginForm, 'profile-info')" >
-    <input class="insetreg" name="email" size="15" placeholder="Email" type="text" name="email" #email="ngModel" [(ngModel)]="service.userData.Email" required>&nbsp;
-    <input name="loginPassword" type="password" size="15" placeholder="Password" class="insetreg" #password="ngModel" [(ngModel)]="service.userData.password" required>&nbsp;
+    <input class="insetreg" name="email" size="15" placeholder="Email" type="text" name="email" #email="ngModel" [(ngModel)]="service.loginData.loginEmail" required>&nbsp;
+    <input name="loginPassword" type="password" size="15" placeholder="Password" class="insetreg" #loginPassword="ngModel" [(ngModel)]="service.loginData.loginPassword" required>&nbsp;
     <button class="loginbtn">Login</button>
 </form>
   

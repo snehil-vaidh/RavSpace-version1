@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { customersUser, contactCustomers } from './user.model';
+import { customersUser, contactCustomers, Phase1FeedbackDetails, loginUser } from './user.model';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFirestoreCollection, AngularFirestoreDocument } from "@angular/fire/firestore";
 import { Observable } from "rxjs";
@@ -14,6 +14,8 @@ export class UserService {
   users : Observable<customersUser>;  
   imageDetails : AngularFireObject<any>;
   contactUsData : contactCustomers;
+  feedbackData : Phase1FeedbackDetails;
+  loginData : loginUser;
 
   constructor(
     private firestore: AngularFirestore,

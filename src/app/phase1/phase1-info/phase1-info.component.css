@@ -40,10 +40,10 @@
 
 .header-profile-img{
     position: absolute;
-    top: 60px;
-    left: 1179px;
-    width: 29px;
-    height: 29px;
+    top: 57px;
+    left: 1119px;
+    width: 35px;
+    height: 35px;
     background: transparent 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 11px #F9452529;
     border-radius: 5px;
@@ -54,15 +54,52 @@
 .a-profile{
     position: absolute;
     top: 65px;
-    left: 1221px;
-    width: 73px;
+    left: 1166px;
+    width: 103px;
     height: 27px;
+    font-size: 16px;
     text-align: left;
-    letter-spacing: 0;
+    letter-spacing: 1;
     color: #F94525;
     opacity: 1;
     cursor: pointer;
 }
+
+.dropdown{
+    position: relative;
+    top: -90px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    top: 93px;
+    left: 1120px;
+    background-color: #F94525;
+    max-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a{
+    float: none;
+    font-size: 18px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover{
+    font-weight: bold;
+}
+
 
 .card-2-background{
     position: absolute;
@@ -162,7 +199,7 @@
 
 .card2-img-cnt{
     position: absolute;
-    top: 220px;
+    top: 140px;
     width: 275px;
     height: 294px;
     background-color: #f2f1f1;
@@ -177,7 +214,18 @@
     left:7px;
     width: 264px;
     height: 270px;
-    
+    opacity: 1;
+    background-color: #ff0263;
+    border: solid #ff0263;
+}
+
+.card-view-2 b{
+    position: relative;
+    top: 440px;
+    font-size: 25px;
+    width: 350px;
+    color: white;
+    font-family: 'Lobster Two', Helvetica, sans-serif;
 }
 
 .card2-icon{
